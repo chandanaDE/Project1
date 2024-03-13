@@ -15,11 +15,19 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'Linked_blobstorage'"
 		},
+		"outputpipeline2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'outputpipeline2'"
+		},
 		"salesdestdb_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'salesdestdb'"
 		},
 		"Destdatalake_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://destdatalakestorage.dfs.core.windows.net/"
+		},
+		"outputpipeline2_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://destdatalakestorage.dfs.core.windows.net/"
 		},
@@ -56,11 +64,17 @@
 					"Linked_blobstorage_connectionString": {
 						"value": "[parameters('Linked_blobstorage_connectionString')]"
 					},
+					"outputpipeline2_accountKey": {
+						"value": "[parameters('outputpipeline2_accountKey')]"
+					},
 					"salesdestdb_connectionString": {
 						"value": "[parameters('salesdestdb_connectionString')]"
 					},
 					"Destdatalake_properties_typeProperties_url": {
 						"value": "[parameters('Destdatalake_properties_typeProperties_url')]"
+					},
+					"outputpipeline2_properties_typeProperties_url": {
+						"value": "[parameters('outputpipeline2_properties_typeProperties_url')]"
 					}
 				}
 			},

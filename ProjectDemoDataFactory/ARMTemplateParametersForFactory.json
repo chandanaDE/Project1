@@ -11,10 +11,16 @@
 		"Linked_blobstorage_connectionString": {
 			"value": ""
 		},
+		"outputpipeline2_accountKey": {
+			"value": ""
+		},
 		"salesdestdb_connectionString": {
 			"value": ""
 		},
 		"Destdatalake_properties_typeProperties_url": {
+			"value": "https://destdatalakestorage.dfs.core.windows.net/"
+		},
+		"outputpipeline2_properties_typeProperties_url": {
 			"value": "https://destdatalakestorage.dfs.core.windows.net/"
 		}
 	}
