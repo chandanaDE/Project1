@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ProjectDemoDataFactory"
 		},
+		"AzureSqlDatabase1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+		},
 		"Destdatalake_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'Destdatalake'"
@@ -57,6 +61,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"AzureSqlDatabase1_connectionString": {
+						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
 					},
 					"Destdatalake_accountKey": {
 						"value": "[parameters('Destdatalake_accountKey')]"

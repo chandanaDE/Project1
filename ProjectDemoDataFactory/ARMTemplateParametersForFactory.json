@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "ProjectDemoDataFactory"
 		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
 		"Destdatalake_accountKey": {
 			"value": ""
 		},
