@@ -5,6 +5,12 @@
 		"factoryName": {
 			"value": "ProjectDemoDataFactory"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
@@ -20,16 +26,19 @@
 		"salesdestdb_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_accountKey": {
-			"value": ""
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://destdatalakestorage.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0317-064425-7og6f0r5"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://Proj1keyvault2024.vault.azure.net/"
 		},
 		"Destdatalake_properties_typeProperties_url": {
 			"value": "https://destdatalakestorage.dfs.core.windows.net/"
 		},
 		"outputpipeline2_properties_typeProperties_url": {
-			"value": "https://destdatalakestorage.dfs.core.windows.net/"
-		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://destdatalakestorage.dfs.core.windows.net/"
 		}
 	}
