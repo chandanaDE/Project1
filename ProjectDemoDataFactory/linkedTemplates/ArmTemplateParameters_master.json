@@ -41,6 +41,9 @@
 		"outputpipeline2_properties_typeProperties_url": {
 			"value": "https://destdatalakestorage.dfs.core.windows.net/"
 		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/610b45d9-7967-4d5c-933c-c0db1b638b3f/resourceGroups/Project1Group/providers/Microsoft.Storage/storageAccounts/blobcontainerstorage"
+		},
 		"containerUri": {
 			"value": ""
 		},

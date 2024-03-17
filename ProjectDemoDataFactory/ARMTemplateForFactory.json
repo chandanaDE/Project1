@@ -54,6 +54,10 @@
 		"outputpipeline2_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://destdatalakestorage.dfs.core.windows.net/"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/610b45d9-7967-4d5c-933c-c0db1b638b3f/resourceGroups/Project1Group/providers/Microsoft.Storage/storageAccounts/blobcontainerstorage"
 		}
 	},
 	"variables": {
@@ -1362,6 +1366,37 @@
 				"[concat(variables('factoryId'), '/datasets/ds_sales')]",
 				"[concat(variables('factoryId'), '/datasets/aggregatedata')]",
 				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "Databrickspipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/project2output/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('trigger1_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated",
+						"Microsoft.Storage.BlobDeleted"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/Databrickspipeline')]"
 			]
 		}
 	]
