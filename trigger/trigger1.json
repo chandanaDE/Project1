@@ -1,0 +1,25 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Databrickspipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/project2output/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/610b45d9-7967-4d5c-933c-c0db1b638b3f/resourceGroups/Project1Group/providers/Microsoft.Storage/storageAccounts/blobcontainerstorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
