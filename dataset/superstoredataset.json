@@ -1,0 +1,105 @@
+{
+	"name": "superstoredataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDatabricksDeltaLake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLakeDataset",
+		"typeProperties": {
+			"database": "my_database",
+			"table": "superstore1"
+		},
+		"schema": [
+			{
+				"name": "Row_ID",
+				"type": "integer"
+			},
+			{
+				"name": "Order_ID",
+				"type": "string"
+			},
+			{
+				"name": "Order_Date",
+				"type": "date"
+			},
+			{
+				"name": "Ship_Date",
+				"type": "date"
+			},
+			{
+				"name": "Ship_Mode",
+				"type": "string"
+			},
+			{
+				"name": "Customer_ID",
+				"type": "string"
+			},
+			{
+				"name": "Customer_Name",
+				"type": "string"
+			},
+			{
+				"name": "Segment",
+				"type": "string"
+			},
+			{
+				"name": "Country",
+				"type": "string"
+			},
+			{
+				"name": "City",
+				"type": "string"
+			},
+			{
+				"name": "State",
+				"type": "string"
+			},
+			{
+				"name": "Postal_Code",
+				"type": "long"
+			},
+			{
+				"name": "Region",
+				"type": "string"
+			},
+			{
+				"name": "Product_ID",
+				"type": "string"
+			},
+			{
+				"name": "Category",
+				"type": "string"
+			},
+			{
+				"name": "Sub_Category",
+				"type": "string"
+			},
+			{
+				"name": "Product_Name",
+				"type": "string"
+			},
+			{
+				"name": "Sales",
+				"type": "double"
+			},
+			{
+				"name": "Quantity",
+				"type": "integer"
+			},
+			{
+				"name": "Discount",
+				"type": "double"
+			},
+			{
+				"name": "Profit",
+				"type": "float"
+			},
+			{
+				"name": "surya_chandra",
+				"type": "string"
+			}
+		]
+	}
+}
