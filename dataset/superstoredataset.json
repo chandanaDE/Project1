@@ -9,7 +9,7 @@
 		"type": "AzureDatabricksDeltaLakeDataset",
 		"typeProperties": {
 			"database": "my_database",
-			"table": "superstore1"
+			"table": "samplesuperstore1"
 		},
 		"schema": [
 			{
@@ -58,7 +58,7 @@
 			},
 			{
 				"name": "Postal_Code",
-				"type": "long"
+				"type": "string"
 			},
 			{
 				"name": "Region",
@@ -86,7 +86,7 @@
 			},
 			{
 				"name": "Quantity",
-				"type": "integer"
+				"type": "short"
 			},
 			{
 				"name": "Discount",
@@ -94,7 +94,9 @@
 			},
 			{
 				"name": "Profit",
-				"type": "float"
+				"type": "decimal",
+				"precision": 10,
+				"scale": 0
 			},
 			{
 				"name": "surya_chandra",
